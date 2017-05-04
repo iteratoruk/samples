@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+        	url 'https://plugins.gradle.org/m2/'
+        }
+    }
+}
+
+apply plugin: 'java'
+
+version '0.1.0-SNAPSHOT'
+
+jar {
+    baseName = 'game-of-life'
+    version =  '0.1.0-SNAPSHOT'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // test dependencies
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:3.6.2'
+}
